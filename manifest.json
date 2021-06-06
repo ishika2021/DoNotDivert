@@ -1,0 +1,20 @@
+{
+    "browser_action":{
+        "default_icon":"VectormacCx_icon.png",
+        "browser_style": true,
+        "default_title": "DND",
+        "default_popup": "index.html"
+    },
+    "manifest_version": 2,
+    "name": "Do Not Divert",
+    "background":{
+        "matches":["<all_urls>"],
+        "scripts":["background.js"],
+        "persistent":false,
+        "run_at":"document_start"
+    },
+    "permissions": [
+        "tabs"
+      ],
+    "version": "0.1.0"
+}
